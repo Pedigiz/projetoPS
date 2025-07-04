@@ -1,3 +1,13 @@
+/*O Montador pergunta: "Isto é uma diretiva?". Se sim, ele entra no bloco if. (isDirective)
+
+O Montador verifica: "É a diretiva START?". Se for, ele pega o operando ("MEUPROGRAMA", por exemplo) e o salva em sua variável nomeDoPrograma.
+
+O Montador delega: Ele então chama PseudoInstrucao.processarDiretiva(...) para a sua responsabilidade original: "Quanto espaço isso ocupa?".
+
+O PseudoInstrucao responde: "A diretiva START ocupa 0 de espaço".
+
+O Montador conclui: Ele atualiza seu contadorDePosicao somando 0. */
+
 package com.app.calingaertextend;
 import java.util.Set;
 
